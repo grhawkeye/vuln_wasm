@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+          margin-left: 80px;
+        }
+    </style>
+
+
+    <script src="wasm.js"></script>
+    <script src="index.js"></script>
+</head>
+
+
+<body>
+    <h1>Is Buffer Overflow possible in WebAssembly?</h1>
+
+    <label for="name">Let's find out:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAalert('XSS!'); -->
+
+    <button onclick="displayGreeting()">Submit</button>
+</body>
+
+
+
+</html>
