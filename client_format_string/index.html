@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+          margin-left: 80px;
+        }
+
+        input{
+            width: 500px;
+            height: 50px;
+        }
+    </style>
+
+
+    <script src="wasm.js"></script>
+    <script src="index.js"></script>
+</head>
+
+
+<body>
+    <h1>Is there a format string vulnerability in WebAssembly?</h1>
+
+    <label for="name">Let's find out:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <button onclick="displayGreeting()">Submit</button>
+
+    <h4 id="result"></h4>
+    <h4 id="password"></h4>
+
+</body>
+
+
+
+</html>
