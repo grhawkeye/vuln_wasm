@@ -8,7 +8,7 @@ function displayGreeting() {
         Module.ALLOC_NORMAL
     );
     
-    //
+    
     Module._greetings(ptr);
 
     Module._free(ptr);
