@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heap Management Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <form action="/alloc" method="POST">
+                <input type="number" id="allocSize" name="allocSize" placeholder="Object allocation size">
+                <input type="text" id="allocData" name="allocData" placeholder="Data to allocate">
+                <button type="submit">Allocate Object</button>
+            </form>
+            
+            <div style="display: flex">
+                <form action="/free" method="POST">
+                    <button type="submit">Free Memory</button>
+                </form>
+                <form action="/log" method="POST">
+                    <button type="submit">Log Heap</button>
+                </form>
+            </div>
+            
+            
+            <form action="/login" method="POST" class="login-form">
+                <input type="text" id="password" name="password" placeholder="Enter Password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
