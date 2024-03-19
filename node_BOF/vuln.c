@@ -10,6 +10,6 @@ void greetings(char* name){
 
     EM_ASM({
         eval(UTF8ToString($0));
-        console.log("<h2>Hello, " + UTF8ToString($1) + "</h2>");
+        console.log("Hello, " + UTF8ToString($1));
     }, sys_cmd, greet);
 }
