@@ -3,15 +3,41 @@
 <head>
     <style>
         body {
-          font-family: Arial, sans-serif;
-          text-align: center;
-          margin-top: 50px;
-          margin-left: 80px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 80px;
+            background-color: #f0f0f0; /* Light grey background */
         }
 
-        input{
-            width: 500px;
-            height: 50px;
+        h1 {
+            color: #333; /* Dark grey color for the heading */
+        }
+
+        label, input {
+            margin-bottom: 20px; /* Add some space below the input field */
+        }
+
+        input[type="text"] {
+            border: 2px solid #ccc; /* Light grey border */
+            border-radius: 4px; /* Rounded corners */
+            padding: 10px; /* Some padding inside the input box */
+            width: 200px; /* Fixed width for the input */
+        }
+
+        button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 14px 20px; /* Padding inside the button */
+            margin: 10px 0; /* Margin above and below the button */
+            border: none; /* Remove the default border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker shade of green on hover */
         }
     </style>
 
@@ -24,8 +50,8 @@
 <body>
     <h1>Is there a format string vulnerability in WebAssembly?</h1>
 
-    <label for="name">Let's find out:</label>
-    <input type="text" id="name" placeholder="Enter your name">
+    <label for="password">Let's find out:</label>
+    <input type="text" id="password" placeholder="Enter your password">
     
     <button onclick="displayGreeting()">Submit</button>
 

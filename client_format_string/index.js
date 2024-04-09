@@ -1,10 +1,10 @@
 function displayGreeting() {
     // Get the value entered in the input field
-    var name = document.getElementById("name").value;
+    var password = document.getElementById("password").value;
     
     // Allocate the new value inside the module
     const ptr = Module.allocate(
-        Module.intArrayFromString(name),
+        Module.intArrayFromString(password),
         Module.ALLOC_NORMAL
     );
     
