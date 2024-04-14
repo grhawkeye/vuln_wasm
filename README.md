@@ -8,7 +8,7 @@ The following vulnerabilities are implemented:
 - Buffer overflow (BOF) client-side, leading to an XSS attack
 - Buffer overflow (BOF) server-side, leading to an RCE attack
 - Format string vulnerability client-side and server-side, leading to arbitrary write and read
-- ret2win: BOF that allows to call an arbitrary function
+- Redirecting Indirect Cals(ret2win): BOF that allows to call an arbitrary function
 - Use After Free Heap vulnerability, server-side.
 - Integer Overflow
 - Arbitrary Array Access
