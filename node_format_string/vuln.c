@@ -17,7 +17,5 @@ int check_password(char* pass){
         printf("\n");
 
         return false;
-    }
-    
-    
+    }   
 }
